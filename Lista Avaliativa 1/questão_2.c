@@ -1,5 +1,5 @@
+// QuestÃ£o 2
 #include <stdio.h>
-#include <locale.h>
 
 int soma(int valorDePesquisa) {
     if (valorDePesquisa == 0) {
@@ -12,21 +12,20 @@ int soma(int valorDePesquisa) {
 }
 
 int main(void){
-    setlocale(LC_ALL, "Portuguese_Brazil");
-    
+
     int valorDePesquisa;
-    printf("Digite o valor para verificação \n");
+    printf("Digite o valor para verificacao \n");
     scanf("%i",&valorDePesquisa);
     int resultadoDaSoma = soma(valorDePesquisa);
 
     if(valorDePesquisa%2 == 0){
 
-        printf("%i é par \n",valorDePesquisa);
-        printf("A soma dos algarismos de %i é %i \n", valorDePesquisa , resultadoDaSoma);
+        printf("%i eh par \n",valorDePesquisa);
+        printf("A soma dos algarismos de %i eh %i \n", valorDePesquisa , resultadoDaSoma);
 
     }else{
-        printf("%i é ímpar \n",valorDePesquisa);
-        printf("A soma dos algarismos de %i é %i \n", valorDePesquisa , resultadoDaSoma);
+        printf("%i eh impar \n",valorDePesquisa);
+        printf("A soma dos algarismos de %i eh %i \n", valorDePesquisa , resultadoDaSoma);
     }
     return 0;
 }
