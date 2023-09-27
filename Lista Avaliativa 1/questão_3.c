@@ -6,8 +6,7 @@ int main(void){
     int senhaCadastro;
     int confirmacaoDaSenha;
     int validacao;
-    int confirmacao = 0;
-    while (confirmacao == 0){
+    while (1){
         printf("Digite sua senha de 4 digitos para cadastro \n");
         scanf("%i",&senhaCadastro);
         printf("Digite novamente a senha: \n");
@@ -20,7 +19,7 @@ int main(void){
             printf("as senhas nao conferem, tente novamente \n");
         }
     }
-    while(confirmacao == 0){
+    while(1){
         printf("digite sua senha \n");
         scanf("%i",&validacao);
         if(validacao == senhaCadastro){
