@@ -14,7 +14,7 @@ int soma(int valorDePesquisa) {
 int main(void){
 
     int valorDePesquisa;
-    printf("Digite o valor para verificacao \n");
+    //printf("Digite o valor para verificacao \n");
     scanf("%i",&valorDePesquisa);
     int resultadoDaSoma = soma(valorDePesquisa);
 
