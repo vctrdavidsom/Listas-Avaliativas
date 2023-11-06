@@ -12,7 +12,7 @@ int main() {
     for (int i = 0; i < contador; i++) {
         for (int o = 0; o < (contador - i); o++) {
             printf("%d", lista[o]);
-            if (o < (contador - i)) {
+            if ((o + 1) < (contador - i)) {
                 printf(" ");
             }
         }
