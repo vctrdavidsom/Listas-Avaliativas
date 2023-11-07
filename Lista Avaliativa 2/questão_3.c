@@ -28,24 +28,12 @@ int main() {
                 matrizCalculada[i][j] = matriz1[i][j] + matriz2[i][j];
             }
         }
-        for (i = 0; i < 4; i++) {
-            for(j = 0; j < 4; j++){
-                printf("%d", matrizCalculada[i][j]);
-            }
-            printf("\n");
-    }
     }
     if (strcmp(operacao, "sub") == 0){
          for (i = 0; i < 4; i++) {
             for(j = 0; j < 4; j++){
                 matrizCalculada[i][j] = matriz1[i][j] - matriz2[i][j];
             }
-        }
-        for (i = 0; i < 4; i++) {
-            for(j = 0; j < 4; j++){
-                printf("%d", matrizCalculada[i][j]);
-            }
-            printf("\n");
         }
     }
     
@@ -58,13 +46,22 @@ int main() {
                 }
             }
         }
+    }
 
-        for (i = 0; i < 4; i++) {
-            for (j = 0; j < 4; j++) {
-                printf("%d", matrizCalculada[i][j]);
+    for (i = 0; i < 4; i++) {
+            for(j = 0; j < 4; j++){
+                if(matrizCalculada[i][j] < 0){
+                    printf("  %d", matrizCalculada[i][j]);
+                }else if(matrizCalculada[i][j] < 10){
+                    printf("   %d", matrizCalculada[i][j]);
+                }else if (matrizCalculada[i][j] < 100){
+                    printf("  %d", matrizCalculada[i][j]);
+                }else if (matrizCalculada[i][j] < 1000){
+                    printf(" %d", matrizCalculada[i][j]);
+                }
+                
             }
             printf("\n");
-        }
     }
     return 0;
 }
