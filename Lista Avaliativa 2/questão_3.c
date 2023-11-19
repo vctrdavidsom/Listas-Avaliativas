@@ -10,6 +10,7 @@ int main() {
     char operacao[30];
 
 
+
     for (i = 0; i < 4; i++) { //armazena na matriz1
         for(j = 0; j < 4; j++){
             scanf("%d", &matriz1[i][j]);
