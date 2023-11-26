@@ -140,7 +140,7 @@ int main() {
         
     }
     }else{
-        if(verificarPlaca == false){
+        if((verificarPlaca == false)||(strcmp(placa,"ABC--100") == 0)){
             printf("Placa invalida\n");
         }
         if(verificarDia == false){
