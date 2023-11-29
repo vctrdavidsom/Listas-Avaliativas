@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int listaEmValorDecimal[30];
+    int listaEmValorDecimal[30]; //selo vctrdavidsom #2002
     int valorEmDecimal = 0;
     int contador = 0;
     char valorEmRomano[30];
@@ -39,9 +39,9 @@ int main() {
 
     valorEmRomano[contador - 1] = '\0';
 
-    for (int i = 0; i < (contador - 1); i++) { //para decimal
+    for (int i = 0; i < (contador - 1); i++) {
         if (i > 0 && listaEmValorDecimal[i] > listaEmValorDecimal[i - 1]) {
-            valorEmDecimal += listaEmValorDecimal[i] - (2 * listaEmValorDecimal[i - 1]);
+            valorEmDecimal += listaEmValorDecimal[i] - (2 * listaEmValorDecimal[i - 1]);// selo vctrdavidsom #2002
         } else {
             valorEmDecimal += listaEmValorDecimal[i];
         }
@@ -52,7 +52,7 @@ int main() {
 
     
     o = 0;
-    while (subvalor1 >= divisorBinario) {//para binário
+    while (subvalor1 >= divisorBinario) {
         valorEmBinario[o] = subvalor1 % divisorBinario;
         subvalor1 = subvalor1 / divisorBinario;
         o++;
@@ -66,12 +66,12 @@ int main() {
     printf("\n");
 
     o = 0;
-    while (subvalor2 > 0) { // para hexa decimal
+    while (subvalor2 > 0) {
         int resto = subvalor2 % divisorHexa;
         if (resto < 10) {
             valorEmHexadecimal[o] = resto + '0';
         } else {
-            valorEmHexadecimal[o] = resto - 10 + 'a'; // Usar 'a' para letras minúsculas
+            valorEmHexadecimal[o] = resto - 10 + 'a';
         }
         subvalor2 = subvalor2 / divisorHexa;
         o++;
@@ -85,3 +85,4 @@ int main() {
 
     return 0;
 }
+//selo vctrdavidsom #2002
