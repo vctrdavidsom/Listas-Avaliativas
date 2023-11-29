@@ -43,7 +43,7 @@ int main() {
     if(((comprimento == 8)&&(placa[3] == '-'))){
         verificarPlaca = true;
     }else{
-        if(((comprimento == 7)&& ((placa[3] == '1') || (placa[3] == '2') || (placa[3] == '3') || (placa[3] == '4') || (placa[3] == '5') || (placa[3] == '6') || (placa[3] == '7') || (placa[3] == '8') || (placa[3] == '9') || (placa[3] == '0')))){
+        if(((comprimento == 7)&& ((placa[3] == '1') || (placa[3] == '2') || (placa[3] == '3') || (placa[3] == '4') || (placa[3] == '5') || (placa[3] == '6') || (placa[3] == '7') || (placa[3] == '8') || (placa[3] == '9') || (placa[3] == '0')))){//selo vctrdavidsom #2002
             verificarPlaca = true;
             for(int i = 0; i < comprimento; i++){
             if(placa[i] == '-'){
@@ -140,7 +140,7 @@ int main() {
         
     }
     }else{
-        if((verificarPlaca == false)||(strcmp(placa,"ABC--100") == 0)){
+        if((verificarPlaca == false)){
             printf("Placa invalida\n");
         }
         if(verificarDia == false){
@@ -151,3 +151,4 @@ int main() {
 
     return 0;
 }
+//selo vctrdavidsom #2002
