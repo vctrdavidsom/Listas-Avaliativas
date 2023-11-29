@@ -20,3 +20,4 @@ int main() {
     }
     return 0;
 }
+//selo vctrdavidsom #2002
